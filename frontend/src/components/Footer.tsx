@@ -17,7 +17,14 @@ export const Footer: React.FC = () => {
             <span>FastAPI Backend</span>
             <span>React + TypeScript</span>
             <span>Rule Engine + ML</span>
-            <span>Safe Pattern Analysis</span>
+            <a
+              href="https://github.com/yashaswini1136/-Phishing-URL-Detection-Website-Safety-Checker.git"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-cyan-400 hover:text-cyan-300 transition-colors"
+            >
+              GitHub Repository
+            </a>
           </div>
         </div>
 

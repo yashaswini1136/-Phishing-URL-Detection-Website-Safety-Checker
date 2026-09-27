@@ -1,5 +1,7 @@
 # Phishing URL Detection & Website Safety Checker
 
+[![GitHub Repository](https://img.shields.io/badge/GitHub-Repository-181717?logo=github)](https://github.com/yashaswini1136/-Phishing-URL-Detection-Website-Safety-Checker.git)
+
 A professional, educational cybersecurity web application demonstrating multi-layered static URL pattern analysis, Shannon entropy calculation, brand impersonation detection, explainable heuristic threat scoring, and hybrid machine learning classification.
 
 ---
@@ -72,7 +74,7 @@ Early heuristic filters flag any URL containing words like `login`, `verify`, `a
 
 ```mermaid
 flowchart TD
-    User([User / Security Analyst]) -->|Submit Target URL| ReactUI[React + Vite Cyber Console]
+    User([Security Analyst: Alex Morgan]) -->|Submit Target URL| ReactUI[React + Vite Cyber Console]
     ReactUI -->|POST /api/analyze| FastAPI[FastAPI Backend Engine]
 
     subgraph Backend Engine [Secure Backend Pattern Pipeline]
@@ -286,6 +288,12 @@ Submits a URL string for multi-layer static threat analysis.
 ---
 
 ## Installation & Running
+
+### 0. Clone Repository
+```bash
+git clone https://github.com/yashaswini1136/-Phishing-URL-Detection-Website-Safety-Checker.git
+cd -Phishing-URL-Detection-Website-Safety-Checker
+```
 
 ### 1. Backend
 ```bash

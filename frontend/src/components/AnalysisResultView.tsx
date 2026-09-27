@@ -70,7 +70,7 @@ export const AnalysisResultView: React.FC<AnalysisResultViewProps> = ({ result, 
             </h3>
           </div>
           <span className="text-xs font-mono px-2.5 py-1 rounded bg-slate-800 text-slate-300 border border-slate-700">
-            Scan #{result.id} &bull; {result.processing_time_ms ? `${result.processing_time_ms}ms` : '<10ms'}
+            Scan #{result.id} &bull; Analyst: Alex Morgan &bull; {result.processing_time_ms ? `${result.processing_time_ms}ms` : '<10ms'}
           </span>
         </div>
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import { ShieldCheck, ShieldAlert, Activity, ExternalLink } from 'lucide-react';
+import { ShieldCheck, GitBranch } from 'lucide-react';
 
 interface NavbarProps {
   activeTab: string;
@@ -55,7 +55,7 @@ export const Navbar: React.FC<NavbarProps> = ({ activeTab, setActiveTab, isBacke
             ))}
           </nav>
 
-          {/* Backend Status indicator */}
+          {/* Backend Status indicator & GitHub Repo */}
           <div className="flex items-center space-x-3">
             <div 
               className={`flex items-center space-x-2 px-3 py-1 rounded-full text-xs font-mono border ${
@@ -70,6 +70,17 @@ export const Navbar: React.FC<NavbarProps> = ({ activeTab, setActiveTab, isBacke
                 {isBackendConnected ? 'ENGINE ONLINE' : 'ENGINE OFFLINE'}
               </span>
             </div>
+
+            <a
+              href="https://github.com/yashaswini1136/-Phishing-URL-Detection-Website-Safety-Checker.git"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-1.5 rounded-lg bg-slate-900 border border-slate-800 text-slate-400 hover:text-slate-200 hover:border-slate-700 transition-colors flex items-center gap-1.5 text-xs font-mono"
+              title="GitHub Repository"
+            >
+              <GitBranch className="w-3.5 h-3.5 text-cyan-400" />
+              <span className="hidden sm:inline">GitHub</span>
+            </a>
           </div>
         </div>
 
